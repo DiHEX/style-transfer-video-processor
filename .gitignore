@@ -3,6 +3,5 @@ __pycache__
 env
 venv
 .vscode
-*.mov
 *.mp4
 !input_vid.mov
