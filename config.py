@@ -4,10 +4,10 @@
 class Config:
     ROOT_PATH = '.'
     # defines the maximum height dimension in pixels. Used for down-sampling the video frames
-    FRAME_HEIGHT = 360
+    FRAME_HEIGHT = 1080
     CLEAR_INPUT_FRAME_CACHE = True
     # defines the rate at which you want to capture frames from the input video
-    INPUT_FPS = 20
+    INPUT_FPS = 30
     INPUT_VIDEO_NAME = 'input_vid.mov'
     INPUT_VIDEO_PATH = f'{ROOT_PATH}/{INPUT_VIDEO_NAME}'
     INPUT_FRAME_DIRECTORY = f'{ROOT_PATH}/input_frames'
@@ -19,7 +19,7 @@ class Config:
     # add None in the sequence to NOT apply style transfer for part of the video (ie. [None, 0, 1, 2])  
     STYLE_SEQUENCE = [0, 1, 2]
 
-    OUTPUT_FPS = 20
+    OUTPUT_FPS = 30
     OUTPUT_VIDEO_NAME = 'output_video.mp4'
     OUTPUT_VIDEO_PATH = f'{ROOT_PATH}/{OUTPUT_VIDEO_NAME}'
     OUTPUT_FRAME_DIRECTORY = f'{ROOT_PATH}/output_frames'
